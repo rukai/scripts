@@ -1,0 +1,4 @@
+/.cache
+/.gvfs
+/.mozilla
+/.local/share/Steam/
