@@ -10,5 +10,3 @@ fi
 
 #setup monitors
 xrandr --output DP1 --auto --output LVDS1 --mode 688x384_60.00 --left-of DP1
-
-exec ../wallpaper.sh
