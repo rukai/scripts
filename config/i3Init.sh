@@ -8,9 +8,6 @@ else
     bash "/home/rubic/Scripts/monitor/localMonitor.sh"
 fi
 
-#set wallpaper
-#exec ~/.i3/background/update.sh #animated background
-#feh --bg-tile ~/Pictures/Wallpapers/minimal/stripedTile.png
-feh --bg-fill /home/rubic/Pictures/Wallpapers/abstract/cube.jpg
+~/Scripts/i3/wallpaper.sh
 
 bash escCapslockSwitch.sh
