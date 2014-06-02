@@ -2,3 +2,4 @@
 /.gvfs
 /.mozilla
 /.local/share/Steam/
+/.dlmoodle
