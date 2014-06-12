@@ -1,9 +1,23 @@
-#!/bin/sh
+#!/bin/bash
+for last; do true; done
+source=`echo $last`
+output=`echo $source | sed s/.markdown/.html/ | sed s/.md/.html/`
+echo "Generating report from $source to $output"
 
-{
-    echo "<link rel='stylesheet' href='file:///home/rubic/.markdown.css'/>"
-    echo "<script type='text/javascript' src='file:///home/rubic/Bin/LaTeXMathML.js'></script>"
-    echo "<script type='text/javascript' src='file:///home/rubic/Scripts/utils/LaTeXMathML.js'></script>"
-    echo "<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>"
-    pandoc --latexmathml $1
-} > `echo $1 | sed s/.markdown/.html/ | sed s/.md/.html/`
+css=/home/rubic/.markdown.css
+
+# When given two arguments the first decides how to format the document
+if [ "$#" == "2" ]
+then
+    if [ "$1" == "github" ]
+    then
+        css=/home/rubic/.githubMarkdown.css
+    fi
+    if [ "$1" == "report" ]
+    then
+        css=/home/rubic/.githubMarkdown.css
+        extra="--toc -s"
+    fi
+fi
+    
+pandoc $extra -c $css -H /home/rubic/Scripts/utils/head.html --latexmathml -o $output $source
