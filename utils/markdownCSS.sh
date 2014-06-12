@@ -15,7 +15,8 @@ then
     fi
     if [ "$1" == "report" ]
     then
-        css=/home/rubic/.githubMarkdown.css
+        cp /home/rubic/.githubMarkdown.css githubMarkdown.css
+        css=githubMarkdown.css
         extra="--toc -s"
     fi
 fi
