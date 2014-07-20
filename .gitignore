@@ -1,0 +1,4 @@
+/backup/configBackup
+/utils/config
+/utils/*.stack
+*.swp

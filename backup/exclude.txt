@@ -3,3 +3,5 @@
 /.mozilla
 /.local/share/Steam/
 /.dlmoodle
+.git
+/Foo

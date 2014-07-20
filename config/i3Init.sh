@@ -10,4 +10,6 @@ fi
 
 ~/Scripts/i3/wallpaper.sh
 
+redshift
+
 bash escCapslockSwitch.sh

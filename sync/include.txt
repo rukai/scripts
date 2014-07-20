@@ -1,0 +1,6 @@
+/Books
+/Comps
+/Pictures
+/Documents
+/Music
+/Education

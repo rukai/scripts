@@ -1,0 +1,24 @@
+workspace "1: Web" output VGA-0
+workspace 2 output VGA-0
+workspace 3 output VGA-0
+workspace 4 output VGA-0
+workspace 5 output VGA-0
+
+workspace 10 output VGA-0
+workspace 9 output VGA-0
+workspace 8 output VGA-0
+workspace 7 output VGA-0
+workspace 6 output VGA-0
+
+bar {
+    position top
+    status_command i3status | ~/.i3/i3bar/wrapper.py
+    #status_command conky -c /home/rubic/.i3/i3bar/conky.rc
+    output LVDS1
+    colors { # dark colors
+        background #080808
+        background #141514
+        #workspaceIcon    #border #background #text 
+        focused_workspace #b18695 #7e5276 #ffffff
+    }
+}
