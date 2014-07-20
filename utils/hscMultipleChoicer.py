@@ -9,9 +9,15 @@ Otherwise hit enter to progress to the next question.
 
 def multipleChoicer():
     #store pdf data
-    if len(sys.argv) != 2:
+    if len(sys.argv) < 2:
         print("Requires one argument in the form of an absolute path to the exam answers.")
         return
+    elif len(sys.argv) == 2:
+        interactive = True
+    elif sys.argv[2] == "all":
+        interactive = False
+    else:
+        interactive = True
     marksFile = sys.argv[1]
     pdf = subprocess.check_output(["/usr/bin/env", "pdftotext", marksFile, "-"]).decode().splitlines()
 
@@ -28,7 +34,10 @@ def multipleChoicer():
     while i <= 20:
         if i != 0:
             print("{}) {}".format(i, answers[i-1]))
-        inputStr = input("> ") #jump to the entered question
+        if interactive:
+            inputStr = input("> ") #jump to the entered question
+        else:
+            inputStr = ""
         i += 1
         if inputStr.isdigit():
             i = int(inputStr)
