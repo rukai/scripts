@@ -1,10 +1,6 @@
 #!/bin/sh
 
 cd ~
-sleep 20s
+sleep 5s
 
-if [ "$(iwgetid -r )" = "ZEUS" ]; then
-    conky -dc .i3/conky/rc
-    mpd
-    #deluged
-fi
+conky -dc .i3/conky/rc
