@@ -27,6 +27,10 @@ def multipleChoicer():
         offset = pdf.index("Answer")+1
         questionCount=int(pdf[offset-3])
         answers = pdf[offset:offset+questionCount]
+    elif "Response" in pdf: #some format (single column)
+        offset = pdf.index("Response")+1
+        questionCount=20
+        answers = pdf[offset:offset+questionCount]
     elif "response" in pdf: # old format (multiple colums)
         segmentLength = 10
         offset = 0

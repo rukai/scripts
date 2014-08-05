@@ -8,7 +8,7 @@ else
     bash "/home/rubic/Scripts/monitor/localMonitor.sh"
 fi
 
-~/Scripts/i3/wallpaper.sh
+eval $(cat ~/.fehbg)
 
 redshift
 
