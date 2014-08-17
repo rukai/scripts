@@ -5,3 +5,6 @@
 /.dlmoodle
 .git
 /Foo
+
++ /.bitcoin/wallet.dat
+- /.bitcoin/*
