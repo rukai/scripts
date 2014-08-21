@@ -4,3 +4,5 @@
 /Documents
 /Music
 /Education
+/.tudu.xml
+
