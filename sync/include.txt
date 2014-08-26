@@ -5,4 +5,5 @@
 /Music
 /Education
 /.tudu.xml
+/.keepass.kdb
 
