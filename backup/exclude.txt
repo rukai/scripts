@@ -8,3 +8,5 @@
 
 + /.bitcoin/wallet.dat
 - /.bitcoin/*
++ /.dogecoin/wallet.dat
+- /.dogecoin/*
