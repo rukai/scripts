@@ -4,6 +4,6 @@
 /Documents
 /Music
 /Education
-/.tudu.xml
+/.todo.txt
 /.keepass.kdb
 
