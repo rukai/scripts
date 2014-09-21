@@ -6,4 +6,4 @@
 /Education
 /.todo.txt
 /.keepass.kdb
-
+/.lyrics
