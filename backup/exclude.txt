@@ -3,8 +3,8 @@
 /.mozilla
 /.local/share/Steam/
 /.dlmoodle
-.git
 /Foo
+/Videos
 
 + /.bitcoin/wallet.dat
 - /.bitcoin/*
