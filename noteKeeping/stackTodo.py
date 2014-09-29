@@ -38,7 +38,7 @@ import os
 # global variable - too lazy to make a obj
 filepath = os.path.realpath(__file__)
 dirpath = os.path.dirname(filepath)
-config_path = os.path.join(dirpath,'.config')
+config_path = os.path.join(dirpath,'config')
 
 def get_list_of_stack():
     l = []
