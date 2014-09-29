@@ -1,4 +1,8 @@
 #!/bin/sh
+
+#Need to be careful
+set -e;set -u
+
 # To make steam play nice with archlinux bleeding edge packages, we remove some of steams packaged libraries.
 
 rm ~/.local/share/Steam/ubuntu12_32/steam-runtime/i386/usr/lib/i386-linux-gnu/libstdc++.so.6

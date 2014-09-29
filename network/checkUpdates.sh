@@ -1,3 +1,8 @@
+#!/bin/bash
+
+#Need to be careful
+set -e;set -u
+
 #Define commands for checking last system update
 debian="stat -c %y /var/log/apt/history.log"
 arch="stat -c %y /var/log/pacman.log"

@@ -1,7 +1,10 @@
 #!/bin/sh
 
+#Need to be careful
+set -e;set -u
+
 #create local sources for global config
-cd configBackup
+cd Scripts/backup/configBackup
 rsync /etc/ etc/
 pacman -Qqen > pacmanList.txt
 

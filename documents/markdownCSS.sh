@@ -1,4 +1,8 @@
 #!/bin/bash
+
+#Need to be careful
+set -e;set -u
+
 for last; do true; done
 source=`echo $last`
 output=`echo $source | sed s/.markdown/.html/ | sed s/.md/.html/`
