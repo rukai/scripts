@@ -11,4 +11,4 @@ else
     type="$2"
 fi
 
-~/Scripts/utils/dotwrap.rb $1 | $type -Tpng > $outputFile
+./dotWrap.rb $1 | $type -Tpng > $outputFile
