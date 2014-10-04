@@ -12,4 +12,4 @@ eval $(cat ~/.fehbg)
 
 redshift
 
-bash escCapslockSwitch.sh
+./escCapslockSwitch.sh

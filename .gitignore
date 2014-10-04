@@ -1,4 +1,4 @@
 /backup/configBackup
-/utils/config
-/utils/*.stack
+/noteKeeping/config
+/noteKeeping/*.stack
 *.swp
