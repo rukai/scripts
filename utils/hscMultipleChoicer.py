@@ -25,7 +25,7 @@ def multipleChoicer():
     #determine list of answers
     if "Answer" in pdf: #new format (single column)
         offset = pdf.index("Answer")+1
-        questionCount=int(pdf[offset-3])
+        questionCount=int(pdf[offset-3]) #works for Questions then Answers but not interleaved
         answers = pdf[offset:offset+questionCount]
     elif "Response" in pdf: #some format (single column)
         offset = pdf.index("Response")+1
