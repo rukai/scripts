@@ -2,5 +2,5 @@
 
 sleep 8s #why?
 
-mpc playlist wakeup | shuf -n 20 | mpc add
+cat ~/.config/mpd/playlists/wakeup.m3u | shuf -n 40 | mpc add
 mpc -q play
