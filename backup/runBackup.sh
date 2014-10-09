@@ -1,12 +1,13 @@
-#!/bin/sh
+#!/bin/bash
 
 #Need to be careful
 set -e;set -u
 
 #create local sources for global config
-cd Scripts/backup/configBackup
+cd ~/Scripts/backup/configBackup
 rsync /etc/ etc/
 pacman -Qqen > pacmanList.txt
+pacman -Qqem > aurList.txt
 
 #backup to remote server
 cd ..
