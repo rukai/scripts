@@ -9,6 +9,7 @@ output=`echo $source | sed s/.markdown/.html/ | sed s/.md/.html/`
 echo "Generating report from $source to $output"
 
 css=/home/rubic/.markdown.css
+extra=" "
 
 # When given two arguments the first decides how to format the document
 if [ "$#" == "2" ]
@@ -25,4 +26,4 @@ then
     fi
 fi
     
-pandoc $extra -c $css -H /home/rubic/Scripts/utils/head.html --latexmathml -o $output $source
+pandoc $extra -c $css -H /home/rubic/Scripts/documents/head.html --latexmathml -o $output $source
